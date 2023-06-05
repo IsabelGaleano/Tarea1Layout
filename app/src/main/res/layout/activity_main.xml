@@ -7,12 +7,223 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView_phone"
+        android:layout_width="82dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="163dp"
+        android:gravity="center_vertical"
+        android:text="Phone"
+        android:textColor="#49454F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText_phonr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+    <EditText
+        android:id="@+id/editText_phonr"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="158dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="84511935"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_phone"
+        app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="348dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_secondLastName"
+        android:layout_width="82dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:text="Second Lastname"
+        android:textColor="#49454F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editText_second_lastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <EditText
+        android:id="@+id/editText_second_lastName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Hernández"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_secondLastName"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <TextView
+        android:id="@+id/textView_first_lastName"
+        android:layout_width="82dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="381dp"
+        android:gravity="center_vertical"
+        android:text="First Lastname"
+        android:textColor="#49454F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText_first_lastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <EditText
+        android:id="@+id/editText_first_lastName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="376dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Galeano"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_first_lastName"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <View
+        android:id="@+id/view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_height="0dp"
+        android:layout_marginBottom="561dp"
+        android:background="#BB86FC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_viewProfile_userImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/ffa09aec412db3f54deadf1b3781de2a" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="82dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="488dp"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textColor="#49454F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText_name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="488dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Isabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_name"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="458dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="348dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="240dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_saveProfile"
+        android:layout_width="324dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="80dp"
+        android:text="Save Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_phonr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
